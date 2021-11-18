@@ -1,3 +1,4 @@
+
 import smbus2
 import bme280
 
@@ -20,3 +21,4 @@ print(data.humidity)
 
 # there is a handy string representation too
 print(data)
+
