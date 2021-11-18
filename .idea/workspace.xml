@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1aada32e-0ca5-4953-acf7-0db83d45b06a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dataNode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/20percent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/20percent.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="ce922f1f-b314-46b3-92f4-161377c6f1cb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/dataNode.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataNode.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
