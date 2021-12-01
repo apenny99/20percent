@@ -1,1 +1,2 @@
-"# 20percent" 
+- dataNode class is designed to make a datapoint that contains the time as well as sensor data
+- dataArray class is designed to make 2d arrays to store the data nodes that are created.
