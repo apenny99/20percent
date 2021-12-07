@@ -21,6 +21,18 @@
 # print(data.humidity)
 #
 # # there is a handy string representation too
-# print(data)
+from dataNode import dataNode as dn
+from dataArray import dataArray as da
+
+
+arr=da()
+n1 = dn(1,1,1,1)d
+da.addVal(n1)
+
+
+
+
+
+
 
 
