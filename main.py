@@ -26,8 +26,19 @@ from dataArray import dataArray as da
 
 
 arr=da()
-n1 = dn(1,1,1,1)d
-da.addVal(n1)
+n1 = dn()
+n1.setTime(1.5)
+n1.setHumidity(55)
+n1.setPressure(1.2)
+n1.setTemprature(53)
+n1.setTrialNumber(1)
+n2=dn()
+n2.setVals(2,34,55,8,11)
+
+arr.addVal(n1)
+arr.addVal(n2)
+arr.printArr()
+
 
 
 

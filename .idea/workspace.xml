@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce922f1f-b314-46b3-92f4-161377c6f1cb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/20percent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/20percent.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataArray.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataArray.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataNode.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataNode.py" afterDir="false" />
@@ -38,6 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dataNode.py" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -70,7 +69,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1aada32e-0ca5-4953-acf7-0db83d45b06a" name="Changes" comment="" />
+      <changelist id="ce922f1f-b314-46b3-92f4-161377c6f1cb" name="Changes" comment="" />
       <created>1636648232424</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
