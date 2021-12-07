@@ -23,21 +23,14 @@
 # # there is a handy string representation too
 from dataNode import dataNode as dn
 from dataArray import dataArray as da
+from collectData import collectData as cd
+
+m = cd(15,3)
+m.getDaA().printArr()
 
 
-arr=da()
-n1 = dn()
-n1.setTime(1.5)
-n1.setHumidity(55)
-n1.setPressure(1.2)
-n1.setTemprature(53)
-n1.setTrialNumber(1)
-n2=dn()
-n2.setVals(2,34,55,8,11)
 
-arr.addVal(n1)
-arr.addVal(n2)
-arr.printArr()
+
 
 
 
