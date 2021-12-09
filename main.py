@@ -25,8 +25,8 @@ from dataNode import dataNode as dn
 from dataArray import dataArray as da
 from collectData import collectData as cd
 
-m = cd(15,3)
-m.getDaA().printArr()
+
+
 
 
 

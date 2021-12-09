@@ -1,4 +1,12 @@
 class dataNode:
+    def __init__(self):
+        self.trialNumber=0
+        self.time=0
+        self.temprature=0
+        self.pressure=0
+        self.humidity=0
+
+
     def setVals(self,trialNo,time,temp,pres,humid):
         self.trialNumber=trialNo
         self.time=time
@@ -9,8 +17,8 @@ class dataNode:
     def setTime(self,time):
         self.time=time
 
-    def setTemprature(self,temprature):
-        self.temprature=temprature
+    def setTemprature(self,temp):
+        self.temprature=temp
 
     def setPressure(self,pressure):
         self.pressure=pressure
