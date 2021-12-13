@@ -24,6 +24,17 @@
 from dataNode import dataNode as dn
 from dataArray import dataArray as da
 from collectData import collectData as cd
+m=cd(5,1)
+m.startCollect()
+# m=da()
+# d1=dn()
+# d1.setVals(1,1,1,1,1)
+# d2=dn()
+# d2.setVals(2,2,2,2,2)
+# m.addVal(d1)
+# m.addVal(d2)
+# m.printArr()
+
 
 
 

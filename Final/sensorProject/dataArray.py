@@ -25,13 +25,3 @@ class dataArray:
     def printArr(self):
         for i in self.dataArr:
             print(i)
-
-
-
-
-
-
-
-
-
-

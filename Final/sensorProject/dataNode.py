@@ -1,15 +1,13 @@
 class dataNode:
-    def __init__(self):
-        self.trialNumber=0
-        self.Altitude=0
-        self.temprature=0
-        self.pressure=0
-        self.humidity=0
-
-
+    trialNumber=0
+    Altitude=0
+    temprature=0
+    pressure=0
+    humidity=0
+    
     def setVals(self,trialNo,Alt,temp,pres,humid):
         self.trialNumber=trialNo
-        self.time=time
+        self.Altitude=Alt
         self.temprature=temp
         self.pressure=pres
         self.humidity=humid
@@ -17,8 +15,8 @@ class dataNode:
     def setAlt(self,Alt):
         self.Altitude=Alt
 
-    def setTemprature(self,temp):
-        self.temprature=temp
+    def setTemprature(self,temprature):
+        self.temprature=temprature
 
     def setPressure(self,pressure):
         self.pressure=pressure
@@ -43,6 +41,4 @@ class dataNode:
 
     def gTrialNumber(self):
         return self.trialNumber
-
-
 
