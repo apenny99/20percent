@@ -10,9 +10,12 @@ In order to use program:
 
 - open run.sh in order to run the program. Currently the only way to change the number of 	observations taken and the delay between observations is changing the values on 	lines 12 and 13 of main.py. I plan on changing this in the future.
 
+In order to run the program from a command line:
+	
+	Option 1:   python3 /home/pi/Documents/sensorProject/main.py
 
-
-
+	Option 2:   (run the file path of your run.sh file as a command)
+ 
 
 
 
