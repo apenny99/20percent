@@ -1,3 +1,8 @@
+# August Penny
+# A python class that uses the dataNode and dataArray classes to take sensor measurements
+# at a given interval and save them in an array format that can be accessed
+# 12/14/2021
+
 import time
 
 from dataNode import dataNode as dn
@@ -8,18 +13,19 @@ from adafruit_bme280 import basic as adafruit_bme280
 class collectData:
     numberObservations=0
     secondsBetween=0
-    nArr = da()
+    nArr = da() # big array to store all the values of the trial
     i2c = board.I2C()
-    bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c)
+    bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c) # new instance of the class that works with the sensor
     bme280.sea_level_pressure = 1013.25
         
-    def __init__(self,numObservations,secBetween):
+    def __init__(self,numObservations,secBetween): # can't be created without inputting the num observations and the seconds between
         self.numberObservations=numObservations
         self.secondsBetween=secBetween
-    def getArr(self):
+
+    def getArr(self): # returns the array
         return self.nArr
     
-    def startCollect(self):
+    def startCollect(self): # starts the measurements
         t=1
         # bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c)
         # bme280.sea_level_pressure = 1013.25

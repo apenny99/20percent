@@ -1,3 +1,7 @@
+# August Penny
+# a Python class used for preliminary testing of the other classes in the sensorProject
+# 12/14/2021
+
 from collectData import collectData as cd
 
 import time
