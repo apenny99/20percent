@@ -1,75 +1,46 @@
-# import time
-#
-# from dataNode import dataNode as dn
-# from dataArray import dataArray as da
-# from Adafruit_BME280 import *
-#
-# class collectData:
-#     numberObservations=0
-#     secondsBetween=0
-#     nArr = da()
-#     # sensor = BME280(t_mode=BME280_OSAMPLE_8, p_mode=BME280_OSAMPLE_8, h_mode=BME280_OSAMPLE_8 )
-#
-#     def __init__(self,numObservations,secBetween):
-#         self.numberObservations=numObservations
-#         self.secondsBetween=secBetween
-#
-#     def startCollect(self):
-#         t=1
-#
-#         while t<=self.numberObservations:
-#             tme=t*self.numberObservations
-#             tN=dn()
-#             tN.setTrialNumber(t)
-#             tN.setTime(tme)
-#             # tN.setTemprature(sensor.read_temprature())
-#             # tN.setPressure(sensor.read_pressure)
-#             # tN.setHumidity(sensor.read_humidity())
-#             time.sleep(self.secondsBetween)
-#             t+=1
-#     def getDaA(self):
-#         return self.nArr()
-
+# August Penny
+# A python class that uses the dataNode and dataArray classes to take sensor measurements
+# at a given interval and save them in an array format that can be accessed
+# 12/14/2021
 
 import time
 
 from dataNode import dataNode as dn
 from dataArray import dataArray as da
-from Adafruit_BME280 import *
-
-
+import board
+from adafruit_bme280 import basic as adafruit_bme280
+    
 class collectData:
-    numberObservations = 0
-    secondsBetween = 0
-    nArr = da()
-    # sensor = BME280(t_mode=BME280_OSAMPLE_8, p_mode=BME280_OSAMPLE_8, h_mode=BME280_OSAMPLE_8)
+    numberObservations=0
+    secondsBetween=0
+    nArr = da() # big array to store all the values of the trial
+    i2c = board.I2C()
+    bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c) # new instance of the class that works with the sensor
+    bme280.sea_level_pressure = 1013.25
+        
+    def __init__(self,numObservations,secBetween): # can't be created without inputting the num observations and the seconds between
+        self.numberObservations=numObservations
+        self.secondsBetween=secBetween
 
-    def __init__(self, numObservations, secBetween):
-        self.numberObservations = numObservations
-        self.secondsBetween = secBetween
+    def getArr(self): # returns the array
+        return self.nArr
+    
+    def startCollect(self): # starts the measurements
+        t=1
+        # bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c)
+        # bme280.sea_level_pressure = 1013.25
 
-    def startCollect(self):
-        t = 1
-
-        while t <= self.numberObservations:
-            # tme = t * self.numberObservations
-            # tN = dn()
-            # tN.setTrialNumber(t)
-            # tN.setTime(tme)
-            # tN.setTemprature(sensor.read_temprature())
-            # tN.setPressure(sensor.read_pressure)
-            # tN.setHumidity(sensor.read_humidity())
-
-            print(t)
-            t += 1
+        while t<=self.numberObservations:
+            n=dn()
+            n.setTrialNumber(t)
+            n.setAlt(round(self.bme280.altitude,2))
+            n.setTemprature(round(self.bme280.temperature,2))
+            n.setPressure(round(self.bme280.pressure,2))
+            n.setHumidity(round(self.bme280.relative_humidity,2))
+            self.nArr.addVal(n)
             time.sleep(self.secondsBetween)
+            t+=1
+    
 
 
-
-    def printArr(self):
-        for i in self.dataArr:
-            print(i)
-
-
-
-# Adafruit_BME280_Example.
+    

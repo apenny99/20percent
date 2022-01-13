@@ -1,53 +1,20 @@
+# August Penny
+# a Python class used for preliminary testing of the other classes in the sensorProject
+# 12/14/2021
 
-# import smbus2
-# import bme280
-#
-# port = 1
-# address = 0x76
-# bus = smbus2.SMBus(port)
-#
-# calibration_params = bme280.load_calibration_params(bus, address)
-#
-#
-# # the sample method will take a single reading and return a
-# # compensated_reading object
-# data = bme280.sample(bus, address, calibration_params)
-#
-# # the compensated_reading class has the following attributes
-# print(data.id)
-# print(data.timestamp)
-# print(data.temperature)
-# print(data.pressure)
-# print(data.humidity)
-#
-# # there is a handy string representation too
-from dataNode import dataNode as dn
-from dataArray import dataArray as da
 from collectData import collectData as cd
-m=cd(5,1)
+
+import time
+import board
+from adafruit_bme280 import basic as adafruit_bme28
+
+numTrials=5
+secondsBetween=1 
+
+m = cd(numTrials,secondsBetween)
+
 m.startCollect()
-# m=da()
-# d1=dn()
-# d1.setVals(1,1,1,1,1)
-# d2=dn()
-# d2.setVals(2,2,2,2,2)
-# m.addVal(d1)
-# m.addVal(d2)
-# m.printArr()
 
+output=m.getArr()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+output.printArr()
