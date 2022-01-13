@@ -1,20 +1,22 @@
-# August Penny
-# a Python class used for preliminary testing of the other classes in the sensorProject
-# 12/14/2021
-
 from collectData import collectData as cd
 
-import time
+from time import gmtime, strftime
 import board
 from adafruit_bme280 import basic as adafruit_bme28
+u=1
 
-numTrials=5
-secondsBetween=1 
-
-m = cd(numTrials,secondsBetween)
-
-m.startCollect()
-
-output=m.getArr()
-
-output.printArr()
+while u==1:
+    print("How many observations would you like to take?")
+    o=int(input())
+    print("How long between each observation? (Seconds)")
+    t=int(input())
+    m = cd(o,t)
+    m.startCollect()
+    output=m.getArr()
+    output.printArr()
+    print("Would you like to take another observation? (y/n)")
+    if input() == "n":
+        break
+    
+    
+print(strftime("%a, %d, %b %Y %H:%M:%S", gmtime()))
