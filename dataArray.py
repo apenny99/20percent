@@ -10,11 +10,11 @@ class dataArray:
 
     def __init__(self): # makes first row of the array the labels for the columns
         iAR = []
-        iAR.append("trial No.")
-        iAR.append("Altitude")
-        iAR.append("Temp")
-        iAR.append("Pres")
-        iAR.append("Humid")
+        iAR.append("| trial No. ")
+        iAR.append("| Altitude ")
+        iAR.append("| Temp ")
+        iAR.append("| Pres ")
+        iAR.append("| Humid |")
         self.dataArr.append(iAR)
 
     def addVal(self,dNode=da()): # adds the values of a node to a small array then puts small array on the big array

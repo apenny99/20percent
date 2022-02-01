@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ce922f1f-b314-46b3-92f4-161377c6f1cb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022-01-13 10:18:11.512610" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataArray.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataArray.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
