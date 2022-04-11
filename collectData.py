@@ -14,6 +14,7 @@ class collectData:
     bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c)
     bme280.sea_level_pressure = 1013.25
 
+
     def __init__(self, numObservations, secBetween):
         self.numberObservations = numObservations
         self.secondsBetween = secBetween
