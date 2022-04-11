@@ -2,18 +2,23 @@ import matplotlib.pyplot as plt
 import numpy as np
 class tGraph:
 
-    def __init__(self):
 
+    def tvinp(self, tmpArr, ylbl,save):
+        end=tmpArr.length
+        i=0
+        x=[]
+        y=tmpArr
 
-    def tvtmp(self, arr, strt, end, save):
-        tmp1=strt
-        while  tmp1<end:
+        while i<end:
+            x.append(i)
+            i+=1
+
 
 
         plt.plot(x,y)
         plt.xlabel('Observation no.')
-        plt.ylabel('Temprature (C)')
-        plt.title('Temorature over time')
+        plt.ylabel(ylbl)
+        plt.title(ylbl + ' vs. Time')
         plt.grid(True)
         if save == 'y':
             plt.savefig("test.png")
