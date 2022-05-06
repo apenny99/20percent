@@ -3,17 +3,24 @@ import numpy as np
 class tGraph:
 
 
-    def tvinp(self, tmpArr, ylbl,save):
-        end=tmpArr.length
-        i=0
+    m=0
+
+    def __init__(self):
+        m=1
+
+
+    def tvinp(self,tmpArr, ylbl,save):
+        end=len(tmpArr)
+        i=1
         x=[]
         y=tmpArr
 
-        while i<end:
+        while i<=end:
             x.append(i)
             i+=1
 
-
+        print(x)
+        print(y)
 
         plt.plot(x,y)
         plt.xlabel('Observation no.')
