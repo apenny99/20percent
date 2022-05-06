@@ -49,9 +49,6 @@ class dataArray:
     def getHumArr(self):
         return self.humArr
 
-
-
-
     def printArr(self):
         for i in self.dataArr:
             print(i)

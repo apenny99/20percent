@@ -19,8 +19,6 @@ class tGraph:
             x.append(i)
             i+=1
 
-        print(x)
-        print(y)
 
         plt.plot(x,y)
         plt.xlabel('Observation no.')
@@ -30,4 +28,3 @@ class tGraph:
         if save == 'y':
             plt.savefig("test.png")
         plt.show()
-

@@ -22,6 +22,22 @@ class collectData:
     def getArr(self):
         return self.nArr.getArr()
 
+    def getTmpArr(self):
+        return self.nArr.getTempArr()
+
+    def getPresArr(self):
+        return self.nArr.getPresArr()
+
+    def getAltArr(self):
+        return self.nArr.getAltArr()
+
+    def getHumArr(self):
+        return self.nArr.getHumArr()
+
+    def getDA(self):
+        return self.nArr
+
+
     def startCollect(self):
         t = 1
         # bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c)
