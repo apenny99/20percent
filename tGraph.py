@@ -28,3 +28,4 @@ class tGraph:
         if save == 'y':
             plt.savefig("test.png")
         plt.show()
+
