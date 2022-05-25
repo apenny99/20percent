@@ -14,11 +14,11 @@ class collectData:
     bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c)
     bme280.sea_level_pressure = 1013.25
 
-    def __init__(self, numObservations, secBetween):
+    def __init__(self, numObservations, secBetween): #initializes the number of observarions and time between
         self.numberObservations = numObservations
         self.secondsBetween = secBetween
 
-    def getArr(self):
+    def getArr(self): #returns the data type specific arrays
         return self.nArr.getArr()
 
     def getTmpArr(self):
@@ -41,7 +41,7 @@ class collectData:
         # bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c)
         # bme280.sea_level_pressure = 1013.25
 
-        while t <= self.numberObservations:
+        while t <= self.numberObservations: #loop that takes an observation then pauses until time to take another
             n = dn()
             n.setTrialNumber(t)
             n.setAlt(round(self.bme280.altitude, 2))
@@ -51,5 +51,5 @@ class collectData:
             self.nArr.addVal(n)
             time.sleep(self.secondsBetween)
             t += 1
-        return self.nArr.getArr()
+        return self.nArr.getArr() #returns the array of data created
 

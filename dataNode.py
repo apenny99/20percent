@@ -5,14 +5,14 @@ class dataNode:
     pressure = 0
     humidity = 0
 
-    def setVals(self, trialNo, Alt, temp, pres, humid):
+    def setVals(self, trialNo, Alt, temp, pres, humid): #sets the values of the nodes
         self.trialNumber = trialNo
         self.Altitude = Alt
         self.temprature = temp
         self.pressure = pres
         self.humidity = humid
 
-    def setAlt(self, Alt):
+    def setAlt(self, Alt): #get and set methods for data types in the nodes
         self.Altitude = Alt
 
     def setTemprature(self, temprature):

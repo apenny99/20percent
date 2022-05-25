@@ -2,8 +2,7 @@ from dataNode import dataNode as da
 
 
 class dataArray:
-    dataArr = []
-
+    dataArr = [] #creates all the arrays for the data types
     tempArr = []
     altArr = []
     presArr = []
@@ -18,12 +17,12 @@ class dataArray:
         iAR.append("Temp")
         iAR.append("Pres")
         iAR.append("Humid")
-        self.dataArr.append(iAR)
+        self.dataArr.append(iAR) #adds titles to large array
 
     def addVal(self, dNode=da()):
         self.trialCount += 1
 
-        smallArr = []
+        smallArr = [] #temporary array
         smallArr.append(dNode.gTrialNumber())
         smallArr.append(dNode.gAlt())
         smallArr.append(dNode.gTemprature())
@@ -35,9 +34,9 @@ class dataArray:
         self.presArr.append(dNode.gPressure())
         self.humArr.append(dNode.gHumidity())
 
-        self.dataArr.append(smallArr)
+        self.dataArr.append(smallArr) #adds the temporary array into the large array
 
-    def getTempArr(self):
+    def getTempArr(self): #methods to access the arrays
         return self.tempArr
 
     def getAltArr(self):
