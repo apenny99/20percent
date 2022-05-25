@@ -1,3 +1,8 @@
+# dataNode.py
+# saves sensor data in nodes
+# August Penny
+# 5/2022
+
 class dataNode:
     trialNumber = 0
     Altitude = 0

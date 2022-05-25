@@ -1,3 +1,8 @@
+# main.py
+# the main class that implements the other classes to run the sensor program
+# August Penny
+# 5/2022
+
 import datetime
 import matplotlib.pyplot as plt
 from collectData import collectData as cd

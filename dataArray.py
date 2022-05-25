@@ -1,3 +1,8 @@
+# dataArray.py
+# Class that makes arrays of the data and stores multiple data nodes
+# August Penny
+# 5/2022
+
 from dataNode import dataNode as da
 
 

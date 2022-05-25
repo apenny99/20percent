@@ -1,3 +1,8 @@
+# collectData.py
+# Class that collects the data and saves it in dataNodes.
+# August Penny
+# 5/2022
+
 import time
 
 from dataNode import dataNode as dn

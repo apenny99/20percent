@@ -1,3 +1,8 @@
+# tGraph.py
+# Class to generate graphs of the observations taken
+# August Penny
+# 5/2022
+
 import matplotlib.pyplot as plt
 import numpy as np
 class tGraph:

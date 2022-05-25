@@ -1,3 +1,8 @@
+# writeToFile.py
+# Class that is responsible for writing the data to a file
+# August Penny
+# 5/2022
+
 import datetime
 
 
