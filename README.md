@@ -38,5 +38,10 @@
 <img width="544" alt="Screen Shot 2022-05-11 at 7 54 53 PM" src="https://user-images.githubusercontent.com/23064318/170384678-3b3e6bb6-c74b-4041-b3cf-706fb15a5675.png">
 
 
+# Future
+  
+  As of right now, the program lacks a GUI, something that would make it a lot more usable for anyone. Additionally, it does not have a good system for installation, and making a better way of installing the project onto a Pi would make it a lot more accessible to people. This would involve making a program of its own, probably in PowerShell that creates files, moves files and enables I2C on its own so that the user doesnt have to do so seperatley. 
+
+
 
     
