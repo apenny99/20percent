@@ -21,7 +21,7 @@
 
 - Connect the terminals of the sensor to the appropriate GPIO pins on the Raspberry Pi. (see image below)
 
-[Logo]: https://cdn-learn.adafruit.com/assets/assets/000/081/025/original/adafruit_products_pi_atecc_bb.png?1568751739 "Diagram"
+<img width="310" alt="Screen Shot 2022-05-25 at 5 18 48 PM" src="https://user-images.githubusercontent.com/23064318/170384798-d7cf2a9e-475d-414a-a4a1-48725a483299.png">
 
 
 ## Running code
