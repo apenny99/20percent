@@ -1,66 +1,42 @@
-DEPRECATED LIBRARY  Adafruit_Python_BME280
-===================
+# Setup
 
-This library has been deprecated!
+## I2C
 
-we are now only using our circuitpython sensor libraries in python
+- To enable I2C, run the command   sudo raspi-config    then select Interfacing Options>I2C and select yes when prompted. select finish and then yes when     prompted to reboot.
 
-we are leaving the code up for historical/research purposes but archiving the repository.
+## Folder formatting
+  
+- Create a folder called "sensorProject" in the home/pi/Documents folder on the Rasperry Pi and move all the files from this github into the folder. 
 
-check out this guide for using the bme280 with python!
-https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout
+## MatPlotLib
 
-#
+- in order to install MatPlotLib, run the following commands in terminal. 
 
-This Python driver allows you to read data from the [Adafruit BME280 Breakout](https://www.adafruit.com/products/2652) on a Raspberry Pi, Pi2 or similar device.
+    sudo apt update
+    sudo apt install python3-matplotlib
+    
+    
 
-## Requirements
+## Wiring
 
-This driver requires that you have previously installed the
-[Adafruit_Python_GPIO](https://github.com/adafruit/Adafruit_Python_GPIO) package.
+- Connect the terminals of the sensor to the appropriate GPIO pins on the Raspberry Pi. (see image below)
 
-On Raspbian, you can install this package with the following commands:
+<img width="310" alt="Screen Shot 2022-05-25 at 5 18 48 PM" src="https://user-images.githubusercontent.com/23064318/170384798-d7cf2a9e-475d-414a-a4a1-48725a483299.png">
 
-```
-sudo apt-get update
-sudo apt-get install build-essential python-pip python-dev python-smbus git
-git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
-cd Adafruit_Python_GPIO
-sudo python setup.py install
-```
 
-## Usage
+## Running code
 
-To read a single set of data points from the BME, connect your Pi 
-to the BME280 breakout using I2C (connect SCL to the SCK pin and SDA
-to the SDI pin), and run the following command from this folder:
+- in order to run the program, open the 'Main.py' with any python interpreter and run it inside the interpeter
+- Alternativley, run the following command in the command line:
 
-```
-python Adafruit_BME280_Example.py
-```
+    python3 /home/pi/Documents/sensorProject/main.py
+    
+## Successful Run
 
-## Credits
+- A successful run should generate a graph like this:
 
-This driver is based on the [Adafruit_BMP](https://github.com/adafruit/Adafruit_Python_BMP)
-driver by Tony DiCola (Adafruit Industries), with BME280 additions kindly provided by
-David J. Taylor (www.satsignal.eu).
+<img width="544" alt="Screen Shot 2022-05-11 at 7 54 53 PM" src="https://user-images.githubusercontent.com/23064318/170384678-3b3e6bb6-c74b-4041-b3cf-706fb15a5675.png">
 
-# MIT License
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+    
